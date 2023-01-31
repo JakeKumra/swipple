@@ -1,0 +1,272 @@
+html {
+  font-size: 1.5rem;
+}
+
+body {
+  margin: 0;
+  font-family: 'Lato', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Typography */
+
+h1, h2, h3, p, ul, img {
+  margin-top: 0;
+}
+
+.nav-logo {
+  margin-bottom: 0;
+  width: 40%;
+}
+
+.nav-category {
+  list-style: none;
+  margin-bottom: 0;
+  padding: 0;
+}
+
+.nav-category > li {
+  font-size: 1.5rem;
+  margin-bottom: 1em;
+}
+
+.products-title {
+  font-size: 1rem;
+  margin: 1.5em 0;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+}
+
+.product-card-title {
+  font-size: 0.6rem;
+  font-weight: lighter;
+}
+
+.product-card-value {
+  font-size: 0.6rem;
+  font-weight: lighter;
+  margin-bottom: 0.2em;
+}
+
+.product-card-num {
+  font-weight: bold;
+  margin-left: 0.5em;
+}
+
+/* Layout */
+
+nav {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  text-align: center;
+  /* background-color: rgb(237, 247, 249); */
+}
+
+.nav-icons-container {
+  display: flex;
+  gap: 0.5em;
+  font-size: 1.25rem; 
+}
+
+.iconBtn {
+  padding: 0.4em 0.6em;
+  border-radius: 4px;
+  border: 1px solid #ba2b2b;
+  color: #ba2b2b;
+  font-size: 0.6rem;
+  background-color: #FFF;
+  height: 90%;
+}
+
+.iconBtn-accent {
+  padding: 0.2em 0.4em;
+  border-radius: 3px;
+  color: white;
+  background-color: #ba2b2b;
+}
+
+/* MAIN */
+
+.main-image {
+  width: 100vw;
+  height: auto;
+  object-fit: cover;
+  object-position: top right;
+  max-height: 450px;
+  margin-bottom: 1em;
+}
+
+.main-container {
+  text-align: center;
+  position: relative;
+}
+
+.main-div {
+  margin: 3em 0;
+}
+
+.main-title {
+  margin-bottom: 0.75em;
+  font-weight: 400;
+}
+
+.main-trade-btn {
+  font-weight: bold;
+  background-color: #ba2b2b;
+  color: #FFF;
+  width: 90%;
+  margin: 0 auto;
+  padding: 0.75em 1.25em;
+  border: none;
+  border-radius: 4px;
+  font-size: 0.725rem;
+  font-family: 'Lato', sans-serif;
+  margin-bottom: 0.5em;
+}
+
+.main-info {
+  display: block;
+  font-size: 0.65rem;
+}
+
+
+
+/* PRODUCTS */
+
+.content-container {
+  width: 90%;
+  max-width: 1300px;
+  /* background-color: rgb(241, 241, 249); */
+  margin:0 auto;
+}
+
+.products-flex {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 1em;
+  
+  justify-content: space-between;
+}
+
+.product-card-container {
+  /* background-color: lightcoral; */
+  width: 200px;
+  font-size: 1rem;
+}
+
+.product-card-img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  cursor: pointer;
+}
+
+/* ICONS */
+
+.product-image-container {
+  position: relative;
+}
+
+.icon-favourite {
+  position: absolute;
+  color: #ba2b2b;
+  top: 0.25em;
+  right: 0.25em;
+}
+
+.icon-favourite:hover,
+.icon-favourite:focus {
+  
+  cursor: pointer;
+  transform: scale(1.1);
+  transition: 0.15s;
+}
+
+/* MEDIA QUERIES */
+@media (min-width: 600px) {
+  html {
+    font-size: 1rem;
+  }
+  
+  nav {
+    
+    flex-direction: row;
+    align-items: center;
+    height: max-content;
+    padding: 1.5em;
+    /* background-color: rgb(243, 243, 243); */
+  }
+
+  .nav-logo {
+    width: 150px;
+  }
+
+  .nav-category {
+    display: flex;
+    align-items: center;
+  }
+
+  .nav-category > li {
+    margin: 0 1em 0 0;
+  }
+
+  .iconBtn {
+    font-size: 0.8rem;
+    cursor: pointer;  
+    height: 100%;
+  }
+
+  .main-div {
+    width: 300px;
+    padding: 2em 1.5em;
+    background-color: #FFF;
+    text-align: left;
+    margin-left: 1em;
+    margin: 0 0 0 1em;
+    border-radius: 3px;
+    position: absolute;
+    top: 4.5em;
+    left: 3em;
+    border: 0.5px solid #bd1f0006;
+  }
+
+  .main-title {
+    font-size: 2.25rem;
+    margin-bottom: 1em;
+  }
+
+  .main-trade-btn {
+    margin-bottom: 1em;
+    font-size: 1rem;
+  }
+
+  .main-info {
+    font-size: 0.85rem;
+    font-weight: bold;
+    color: #ba2b2b;
+  }
+
+  .products-title {
+    font-size: 1.7rem;
+    margin-bottom: 0.75em;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+
+  }
+
+  .product-card-value {
+    font-size: 0.9rem;
+  }
+  .product-card-title {
+    font-size: 0.8rem;
+  }
+
+  .icon-favourite {
+    font-size: 1.5rem;
+  }
+}

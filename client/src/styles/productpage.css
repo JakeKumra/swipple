@@ -1,0 +1,182 @@
+/* Typography */
+
+h1, h3, p, img {
+    margin-top: 0;
+    margin-bottom: 1em;
+}
+
+.product-page-name {
+    font-size: 1rem;
+    margin: 1.5em 0;
+}
+
+.product-page-title {
+    font-size: 0.9rem;
+}
+
+.product-page-info {
+    font-size: 0.7rem;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.profile-name {
+    margin: 0 0 0.5em 0;
+    font-weight: normal;
+    background-color: #ba2b2b;
+    color: #FFF;
+    font-weight: bold;
+    padding: 0.2em;
+    font-size: 1rem;
+}
+
+.profile-view {
+    font-size: 0.65rem;
+    margin: 0 0 0.55em 0;
+    font-weight: normal;
+}
+
+/* Layout */
+
+.large-screen {
+    display: none;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    border-top: 1px solid rgb(215, 215, 215);
+}
+
+.product-page-name-large {
+    order: -2;
+}
+
+.product-page-img {
+    width: 100%;
+    max-width: 350px;
+    height: 400px;
+    object-position: center;
+    object-fit: cover;
+}
+  
+.product-page-info-container {
+    display: flex;
+    justify-content: space-between;
+    font-weight: lighter;
+}
+
+.profile {
+    margin: 1.5em 0;
+    border: 1px solid rgb(215, 215, 215);
+    padding: 0.5em;
+    border-radius: 1px;
+}
+
+/* Buttons */
+
+.btns-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.btns {
+    width: 47.5%;
+    padding: 0.5em 0.75em;
+    border-radius: 4px;
+    border: 1px solid #ba2b2b;
+    color: #ba2b2b;
+    font-size: 0.6rem;
+    font-weight: bold;
+    background-color: #FFF;
+    cursor: pointer;
+    margin-bottom: 0;
+}
+
+.btns:focus,
+.btns:hover {
+    box-shadow: 1px 1px #ba2b2b92;
+}
+
+
+@media (min-width: 600px) { 
+
+    .large-screen {
+        display: block;
+    }
+
+    .small-screen {
+        display: none;
+    }
+
+    .main {
+        flex-direction: row;
+        gap: 5%;
+        padding-top: 2em;
+    }
+
+    .product-page-img {
+        order: -2;
+    }
+
+    .product-page-name {
+        font-size: 2.25rem;
+        margin: 1em 0;
+        order: -1
+    }
+    
+    .btns-container {
+        display: flex;
+        justify-content: end;
+        margin-right: 2em;
+    }
+
+    .product-page-title {
+        font-size: 1.25rem;
+    }
+    
+    .product-page-info {
+        font-size: 1rem;
+    }
+
+    .profile {
+        min-width: 350px;
+        max-width: 400px;
+    }
+
+    .profile-name {
+        font-size: 1.25rem;
+        background-color: #ba2b2b;
+        padding: 0.2em;
+        color: #FFF;
+        font-weight: bold;
+    }
+    
+    .profile-view {
+        font-size: 1rem;
+        margin-bottom: 0.5em;
+        font-weight: normal;
+    }
+
+    .btns-container {
+        display: flex;
+        justify-content: space-between;
+
+    }
+    
+    .btns {
+        min-width: 100px;
+        padding: 0.5em 0.8em;
+        border-radius: 4px;
+        border: 1px solid #ba2b2b;
+        color: #ba2b2b;
+        font-size: 0.9rem;
+        font-weight: bold;
+        background-color: #FFF;
+        cursor: pointer;
+    }
+
+
+}

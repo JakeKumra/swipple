@@ -1,0 +1,18 @@
+# GET http://localhost:3001/api/beverages/2
+
+# DELETE  http://localhost:3001/api/beverages/12
+
+POST http://localhost:3001/api/beverages/ HTTP/1.1
+content-type: application/json
+
+{
+    "id": 18,
+    "type": "Liqueur",
+    "description": "A famed Portugese liqueur flavoured with a secret recipe of herbs and spices from all over the world.",
+    "name": "Licor Beirao",
+    "imageUrl": "https://source.unsplash.com/JkmBAE1cjBY/w=300",
+    "size": "70cl",
+    "value": "17.25",
+    "abv": "22%"
+}
+
